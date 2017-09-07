@@ -1,10 +1,12 @@
-var UserPosition, client, computeRatingClass, computeReviewsText, geolocUser, helper, renderFacets, renderHits, renderPagination;
+var UserPosition, client, computeRatingClass, computeReviewsText, geolocUser, geolocationRoutine, helper, index, renderFacets, renderHits, renderPagination;
 
 client = algoliasearch("N411KW7TFO", "7f9383b180c33541ff30b22f3912a368");
 
 helper = algoliasearchHelper(client, "restaurants", {
   "facets": ['food_type', 'payment_options', 'dining_style', 'price_range']
 });
+
+index = client.initIndex('restaurants');
 
 UserPosition = null;
 
@@ -138,14 +140,26 @@ renderHits = function(content) {
   }
 };
 
-geolocUser = debounce(function() {
-  navigator.permissions.query({
-    "name": "geolocation"
-  }).then(function(permission) {
-    if (permission.state === "prompt") {
-      return $("#geo-tooltip").removeClass("hide");
+geolocationRoutine = function(e) {
+  return navigator.geolocation.getCurrentPosition(function(position) {
+    UserPosition = "".concat(position.coords.latitude, ",", position.coords.longitude);
+    if (e.type === "search") {
+      helper.setQueryParameter("aroundLatLng", UserPosition);
+      return helper.search();
     }
   });
+};
+
+geolocUser = debounce(function() {
+  if (navigator.permissions) {
+    navigator.permissions.query({
+      "name": "geolocation"
+    }).then(function(permission) {
+      if (permission.state === "prompt") {
+        return $("#geo-tooltip").removeClass("hide");
+      }
+    });
+  }
   return navigator.geolocation.getCurrentPosition(function(position) {
     UserPosition = "".concat(position.coords.latitude, ",", position.coords.longitude);
     $("input[type=search]").trigger("search");
@@ -161,23 +175,21 @@ $(document).on("keyup search", "input[type=search]", function(e) {
   helper.setQuery(e.target.value);
   helper.setQueryParameter("aroundLatLngViaIP", false);
   if (navigator.geolocation) {
-    navigator.permissions.query({
-      "name": "geolocation"
-    }).then(function(permission) {
-      if (permission.state === "granted") {
-        return navigator.geolocation.getCurrentPosition(function(position) {
-          UserPosition = "".concat(position.coords.latitude, ",", position.coords.longitude);
-          if (e.type === "search") {
-            helper.setQueryParameter("aroundLatLng", UserPosition);
-            return helper.search();
+    if (navigator.permissions) {
+      navigator.permissions.query({
+        "name": "geolocation"
+      }).then(function(permission) {
+        if (permission.state === "granted") {
+          return geolocationRoutine(e);
+        } else {
+          if (e.type === "keyup") {
+            return geolocUser();
           }
-        });
-      } else {
-        if (e.type === "keyup") {
-          return geolocUser();
         }
-      }
-    });
+      });
+    } else if (e.type === "keyup") {
+      geolocUser();
+    }
   }
   if (UserPosition !== null) {
     helper.setQueryParameter("aroundLatLng", UserPosition);
@@ -227,6 +239,36 @@ $(document).on("click", "#results-expander .expando-button", function(e) {
 $(document).on("click", ".paginator", function(e) {
   helper.setPage($(e.target).data("value"));
   return helper.search();
+});
+
+autocomplete('input[type=search]', {
+  hint: false,
+  cssClasses: {
+    root: "algolia-autocomplete columns small-11 large-10"
+  }
+}, {
+  source: autocomplete.sources.hits(index, {
+    hitsPerPage: 5,
+    restrictSearchableAttributes: ['name']
+  }),
+  displayKey: 'name',
+  templates: {
+    suggestion: function(suggestion) {
+      return "<span>" + suggestion._highlightResult.name.value + "</span>";
+    }
+  }
+});
+
+$(document).on("click", ".aa-suggestion", function(e) {
+  console.log('hello');
+  helper.setQuery($("input[type=search").val());
+  return helper.search();
+});
+
+$(document).on("keyup", "input[type=search]", function(e) {
+  if (e.keyCode === 13) {
+    return $(e.target).blur();
+  }
 });
 
 $("input[type=search]").trigger("search");

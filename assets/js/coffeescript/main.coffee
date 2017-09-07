@@ -1,5 +1,6 @@
 client = algoliasearch "N411KW7TFO", "7f9383b180c33541ff30b22f3912a368"
 helper = algoliasearchHelper client, "restaurants", {"facets" : ['food_type', 'payment_options', 'dining_style', 'price_range']}
+index = client.initIndex 'restaurants'
 UserPosition = null
 
 `// Returns a function, that, as long as it continues to be invoked, will not
@@ -109,12 +110,20 @@ renderHits = (content)->
 					reviewsText = computeReviewsText(hit.reviews_count)
 					return "<div class='restaurant-card row columns small-12 large-10'><a href='#{hit.reserve_url}' target='_blank'><div class='columns restaurant-picture'><img src='#{hit.image_url}' /></div><div class='columns restaurant-content row'><h1>#{hit._highlightResult.name.value}</h1><div class='row columns small-12 restaurant-meta'><div class='restaurant-rating columns'><span class='restaurant-note'>#{hit.stars_count}</span> <div class='rating #{ratingClass}'></div></div><div class='restaurant-reviews'>(#{hit.reviews_count} #{reviewsText})</div></div><div class='row columns small-12 restaurant-description'>#{hit._highlightResult.food_type.value} | #{hit._highlightResult.neighborhood.value} | #{hit.price_range}</div></div></a></div>";
 
+geolocationRoutine = (e)->
+	navigator.geolocation.getCurrentPosition (position)->
+		UserPosition = "".concat position.coords.latitude, ",", position.coords.longitude
+		if e.type == "search"
+			helper.setQueryParameter "aroundLatLng", UserPosition
+			helper.search()
+
 geolocUser = debounce ()->
-	navigator.permissions.query {"name":"geolocation"}
-		.then (permission)->
-			if permission.state == "prompt"
-				$ "#geo-tooltip"
-					.removeClass "hide"
+	if navigator.permissions
+		navigator.permissions.query {"name":"geolocation"}
+			.then (permission)->
+				if permission.state == "prompt"
+					$ "#geo-tooltip"
+						.removeClass "hide"
 	navigator.geolocation.getCurrentPosition (position)->
 		UserPosition = "".concat position.coords.latitude, ",", position.coords.longitude
 		$ "input[type=search]"
@@ -132,17 +141,16 @@ $ document
 		helper.setQuery e.target.value
 		helper.setQueryParameter "aroundLatLngViaIP", false
 		if navigator.geolocation
-			navigator.permissions.query {"name":"geolocation"}
-				.then (permission)->
-					if permission.state == "granted"
-						navigator.geolocation.getCurrentPosition (position)->
-							UserPosition = "".concat position.coords.latitude, ",", position.coords.longitude
-							if e.type == "search"
-								helper.setQueryParameter "aroundLatLng", UserPosition
-								helper.search()
-					else 
-						if e.type == "keyup"
-							geolocUser()
+			if navigator.permissions
+				navigator.permissions.query {"name":"geolocation"}
+					.then (permission)->
+						if permission.state == "granted"
+							geolocationRoutine(e)
+						else 
+							if e.type == "keyup"
+								geolocUser()
+			else if e.type == "keyup"
+				geolocUser()
 		if UserPosition != null
 			helper.setQueryParameter "aroundLatLng", UserPosition
 		helper.search()
@@ -199,6 +207,21 @@ $ document
 	.on "click", ".paginator", (e)->
 		helper.setPage $(e.target).data "value"
 		helper.search()
+
+autocomplete 'input[type=search]', {hint: false, cssClasses: {root: "algolia-autocomplete columns small-11 large-10"}}, {source: autocomplete.sources.hits(index, {hitsPerPage: 5, restrictSearchableAttributes: ['name']}), displayKey: 'name', templates: { suggestion: (suggestion)-> 
+		return "<span>#{suggestion._highlightResult.name.value}</span>"}}
+
+$ document
+	.on "click", ".aa-suggestion", (e)->
+		console.log 'hello'
+		helper.setQuery $("input[type=search").val()
+		helper.search()
+
+$ document
+	.on "keyup", "input[type=search]", (e)->
+		if e.keyCode == 13
+			$ e.target
+				.blur()
 
 $ "input[type=search]"
 	.trigger "search"

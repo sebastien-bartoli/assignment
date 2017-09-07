@@ -215,13 +215,15 @@ body {
 			color: #9A9A9A;
 			font-family: 'Helvetica Neue', 'Helvetica';
 		}
+	}
+}
 
-		em{
-			font-style: normal;
-			background-color: khaki;
-			font-weight: bold;
-			color: black;
-		}
+.restaurant-content, .aa-suggestion{
+	em{
+		font-style: normal;
+		background-color: khaki;
+		font-weight: bold;
+		color: black;
 	}
 }
 
@@ -257,4 +259,25 @@ body {
     background-size: contain;
   }
   
+}
+
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  min-width: 20em;
+  max-width: 90%;
+  margin-top: -1em;
+  margin-left: 1.1em;
+  box-sizing: border-box; 
+  border-radius: 3px;
+}
+.aa-suggestion {
+  padding: 12px;
+  cursor: pointer;
+}
+.aa-suggestion + .aa-suggestion {
+    border-top: 1px solid rgba(228, 228, 228, 0.6);
+}
+.aa-suggestion:hover, .aa-suggestion.aa-cursor {
+    background-color: rgba(241, 241, 241, 0.35); 
 }
