@@ -1,0 +1,2737 @@
+@charset "UTF-8";
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Document
+       ========================================================================== */
+/**
+     * 1. Change the default font family in all browsers (opinionated).
+     * 2. Correct the line height in all browsers.
+     * 3. Prevent adjustments of font size after orientation changes in
+     *    IE on Windows Phone and in iOS.
+     */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* line 59, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+       ========================================================================== */
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+/* line 83, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+body {
+  margin: 0; }
+
+/**
+     * Add the correct display in IE 9-.
+     */
+/* line 91, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+/* line 105, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+/* line 198, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+figcaption,
+figure {
+  display: block; }
+
+/**
+     * Add the correct margin in IE 8.
+     */
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
+/* line 221, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+     * Add the correct display in IE.
+     */
+/* line 231, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+main {
+  display: block; }
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+/* line 251, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Links
+       ========================================================================== */
+/**
+     * 1. Remove the gray background on active links in IE 10.
+     * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+     */
+/* line 266, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+     * Remove the outline on focused links when they are also active or hovered
+     * in all browsers (opinionated).
+     */
+/* line 276, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+       ========================================================================== */
+/**
+     * 1. Remove the bottom border in Firefox 39-.
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+/* line 291, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+     * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+     */
+/* line 301, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+/* line 310, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+/* line 320, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+     * Add the correct font style in Android 4.3-.
+     */
+/* line 331, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+dfn {
+  font-style: italic; }
+
+/**
+     * Add the correct background and color in IE 9-.
+     */
+/* line 339, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+     * Add the correct font size in all browsers.
+     */
+/* line 348, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+small {
+  font-size: 80%; }
+
+/**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+/* line 357, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 365, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 369, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+/* line 382, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+audio,
+video {
+  display: inline-block; }
+
+/**
+     * Add the correct display in iOS 4-7.
+     */
+/* line 391, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+     * Remove the border on images inside links in IE 10-.
+     */
+/* line 400, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+img {
+  border-style: none; }
+
+/**
+     * Hide the overflow in IE.
+     */
+/* line 408, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+       ========================================================================== */
+/**
+     * 1. Change the font styles in all browsers (opinionated).
+     * 2. Remove the margin in Firefox and Safari.
+     */
+/* line 422, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+     * Show the overflow in IE.
+     */
+/* line 442, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+button {
+  overflow: visible; }
+
+/**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+/* line 451, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+     * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+     *    controls in Android 4.
+     * 2. Correct the inability to style clickable types in iOS and Safari.
+     */
+/* line 462, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/* line 469, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  /**
+       * Remove the inner border and padding in Firefox.
+       */
+  /**
+       * Restore the focus styles unset by the previous rule.
+       */ }
+  /* line 478, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0; }
+  /* line 487, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText; }
+
+/**
+     * Show the overflow in Edge.
+     */
+/* line 496, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+input {
+  overflow: visible; }
+
+/**
+     * 1. Add the correct box sizing in IE 10-.
+     * 2. Remove the padding in IE 10-.
+     */
+/* line 505, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+/* line 515, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+/* line 525, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+  /**
+       * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+       */ }
+  /* line 533, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+/* line 544, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/**
+     * Change the border, margin, and padding in all browsers (opinionated).
+     */
+/* line 553, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+/* line 566, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+     * 1. Add the correct display in IE 9-.
+     * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
+/* line 580, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+     * Remove the default vertical scrollbar in IE.
+     */
+/* line 589, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+textarea {
+  overflow: auto; }
+
+/* Interactive
+       ========================================================================== */
+/*
+     * Add the correct display in Edge, IE, and Firefox.
+     */
+/* line 602, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+details {
+  display: block; }
+
+/*
+     * Add the correct display in all browsers.
+     */
+/* line 610, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+summary {
+  display: list-item; }
+
+/*
+     * Add the correct display in IE 9-.
+     */
+/* line 618, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+menu {
+  display: block; }
+
+/* Scripting
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+/* line 651, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+canvas {
+  display: inline-block; }
+
+/**
+     * Add the correct display in IE.
+     */
+/* line 659, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+template {
+  display: none; }
+
+/* Hidden
+       ========================================================================== */
+/**
+     * Add the correct display in IE 10-.
+     */
+/* line 672, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/_vendor/normalize-scss/sass/normalize/_normalize-mixin.scss */
+[hidden] {
+  display: none; }
+
+/* line 139, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+.foundation-mq {
+  font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
+
+/* line 143, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+/* line 149, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/* line 156, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 173, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic; }
+
+/* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+  border-radius: 0; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+select {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0; }
+
+/* line 202, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object,
+.mqa-display img,
+.mqa-display embed,
+.mqa-display object {
+  max-width: none !important; }
+
+/* line 210, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+button {
+  padding: 0;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  line-height: 1;
+  cursor: auto; }
+  /* line 201, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/util/_mixins.scss */
+  [data-whatinput='mouse'] button {
+    outline: 0; }
+
+/* line 222, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+pre {
+  overflow: auto; }
+
+/* line 227, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; }
+
+/* line 236, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+.is-visible {
+  display: block !important; }
+
+/* line 240, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/_global.scss */
+.is-hidden {
+  display: none !important; }
+
+/* line 75, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-right {
+  justify-content: flex-end; }
+
+/* line 75, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-center {
+  justify-content: center; }
+
+/* line 75, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-justify {
+  justify-content: space-between; }
+
+/* line 75, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-spaced {
+  justify-content: space-around; }
+
+/* line 83, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-right.vertical.menu > li > a {
+  justify-content: flex-end; }
+
+/* line 83, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-center.vertical.menu > li > a {
+  justify-content: center; }
+
+/* line 91, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-top {
+  align-items: flex-start; }
+
+/* line 95, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-self-top {
+  align-self: flex-start; }
+
+/* line 91, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-bottom {
+  align-items: flex-end; }
+
+/* line 95, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-self-bottom {
+  align-self: flex-end; }
+
+/* line 91, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-middle {
+  align-items: center; }
+
+/* line 95, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-self-middle {
+  align-self: center; }
+
+/* line 91, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-stretch {
+  align-items: stretch; }
+
+/* line 95, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-self-stretch {
+  align-self: stretch; }
+
+/* line 101, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.align-center-middle {
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+/* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.small-order-1 {
+  order: 1; }
+
+/* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.small-order-2 {
+  order: 2; }
+
+/* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.small-order-3 {
+  order: 3; }
+
+/* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.small-order-4 {
+  order: 4; }
+
+/* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.small-order-5 {
+  order: 5; }
+
+/* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.small-order-6 {
+  order: 6; }
+
+@media print, screen and (min-width: 40em) {
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-order-1 {
+    order: 1; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-order-2 {
+    order: 2; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-order-3 {
+    order: 3; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-order-4 {
+    order: 4; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-order-5 {
+    order: 5; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-order-6 {
+    order: 6; } }
+
+@media print, screen and (min-width: 64em) {
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-order-1 {
+    order: 1; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-order-2 {
+    order: 2; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-order-3 {
+    order: 3; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-order-4 {
+    order: 4; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-order-5 {
+    order: 5; }
+  /* line 109, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-order-6 {
+    order: 6; } }
+
+/* line 18, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-container {
+  display: flex; }
+
+/* line 22, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-child-auto {
+  flex: 1 1 auto; }
+
+/* line 26, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-child-grow {
+  flex: 1 0 auto; }
+
+/* line 30, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-child-shrink {
+  flex: 0 1 auto; }
+
+/* line 35, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-dir-row {
+  flex-direction: row; }
+
+/* line 35, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-dir-row-reverse {
+  flex-direction: row-reverse; }
+
+/* line 35, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-dir-column {
+  flex-direction: column; }
+
+/* line 35, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+.flex-dir-column-reverse {
+  flex-direction: column-reverse; }
+
+@media print, screen and (min-width: 40em) {
+  /* line 45, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-container {
+    display: flex; }
+  /* line 49, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-child-auto {
+    flex: 1 1 auto; }
+  /* line 53, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-child-grow {
+    flex: 1 0 auto; }
+  /* line 57, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-child-shrink {
+    flex: 0 1 auto; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-dir-row {
+    flex-direction: row; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-dir-row-reverse {
+    flex-direction: row-reverse; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-dir-column {
+    flex-direction: column; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .medium-flex-dir-column-reverse {
+    flex-direction: column-reverse; } }
+
+@media print, screen and (min-width: 64em) {
+  /* line 45, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-container {
+    display: flex; }
+  /* line 49, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-child-auto {
+    flex: 1 1 auto; }
+  /* line 53, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-child-grow {
+    flex: 1 0 auto; }
+  /* line 57, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-child-shrink {
+    flex: 0 1 auto; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-dir-row {
+    flex-direction: row; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-dir-row-reverse {
+    flex-direction: row-reverse; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-dir-column {
+    flex-direction: column; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_flex.scss */
+  .large-flex-dir-column-reverse {
+    flex-direction: column-reverse; } }
+
+/* line 127, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap; }
+  /* line 131, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .row .row {
+    margin-right: -0.625rem;
+    margin-left: -0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      /* line 131, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+      .row .row {
+        margin-right: -0.9375rem;
+        margin-left: -0.9375rem; } }
+    @media print, screen and (min-width: 64em) {
+      /* line 131, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+      .row .row {
+        margin-right: -0.9375rem;
+        margin-left: -0.9375rem; } }
+    /* line 134, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .row .row.collapse {
+      margin-right: 0;
+      margin-left: 0; }
+  /* line 141, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .row.expanded {
+    max-width: none; }
+    /* line 144, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .row.expanded .row {
+      margin-right: auto;
+      margin-left: auto; }
+  /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .row:not(.expanded) .row {
+    max-width: none; }
+  /* line 155, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .row.collapse > .column, .row.collapse > .columns {
+    padding-right: 0;
+    padding-left: 0; }
+  /* line 162, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .row.is-collapse-child,
+  .row.collapse > .column > .row,
+  .row.collapse > .columns > .row {
+    margin-right: 0;
+    margin-left: 0; }
+
+/* line 170, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.column, .columns {
+  flex: 1 1 0px;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  min-width: 0; }
+  @media print, screen and (min-width: 40em) {
+    /* line 170, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .column, .columns {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+
+/* line 176, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.column.row.row, .row.row.columns {
+  float: none;
+  display: block; }
+
+/* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.row .column.row.row, .row .row.row.columns {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-0 {
+  margin-left: 0%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-1 {
+  margin-left: 8.33333%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-3 {
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-2 {
+  margin-left: 16.66667%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-3 {
+  margin-left: 25%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-4 {
+  margin-left: 33.33333%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-5 {
+  margin-left: 41.66667%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-6 {
+  margin-left: 50%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-7 {
+  margin-left: 58.33333%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-8 {
+  margin-left: 66.66667%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-9 {
+  margin-left: 75%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-10 {
+  margin-left: 83.33333%; }
+
+/* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-offset-11 {
+  margin-left: 91.66667%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-1 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-1 > .column, .small-up-1 > .columns {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-2 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-2 > .column, .small-up-2 > .columns {
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-3 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-3 > .column, .small-up-3 > .columns {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-4 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-4 > .column, .small-up-4 > .columns {
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-5 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-5 > .column, .small-up-5 > .columns {
+    flex: 0 0 20%;
+    max-width: 20%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-6 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-6 > .column, .small-up-6 > .columns {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-7 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-7 > .column, .small-up-7 > .columns {
+    flex: 0 0 14.28571%;
+    max-width: 14.28571%; }
+
+/* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-up-8 {
+  flex-wrap: wrap; }
+  /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .small-up-8 > .column, .small-up-8 > .columns {
+    flex: 0 0 12.5%;
+    max-width: 12.5%; }
+
+/* line 236, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-collapse > .column, .small-collapse > .columns {
+  padding-right: 0;
+  padding-left: 0; }
+
+/* line 240, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.small-uncollapse > .column, .small-uncollapse > .columns {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem; }
+
+@media print, screen and (min-width: 40em) {
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-0 {
+    margin-left: 0%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-3 {
+    margin-left: 25%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-6 {
+    margin-left: 50%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-9 {
+    margin-left: 75%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-12 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-1 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-1 > .column, .medium-up-1 > .columns {
+      flex: 0 0 100%;
+      max-width: 100%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-2 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-2 > .column, .medium-up-2 > .columns {
+      flex: 0 0 50%;
+      max-width: 50%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-3 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-3 > .column, .medium-up-3 > .columns {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-4 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-4 > .column, .medium-up-4 > .columns {
+      flex: 0 0 25%;
+      max-width: 25%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-5 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-5 > .column, .medium-up-5 > .columns {
+      flex: 0 0 20%;
+      max-width: 20%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-6 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-6 > .column, .medium-up-6 > .columns {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-7 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-7 > .column, .medium-up-7 > .columns {
+      flex: 0 0 14.28571%;
+      max-width: 14.28571%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-up-8 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .medium-up-8 > .column, .medium-up-8 > .columns {
+      flex: 0 0 12.5%;
+      max-width: 12.5%; } }
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+  /* line 215, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-expand {
+    flex: 1 1 0px; } }
+
+/* line 223, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.row.medium-unstack > .column, .row.medium-unstack > .columns {
+  flex: 0 0 100%; }
+  @media print, screen and (min-width: 40em) {
+    /* line 223, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .row.medium-unstack > .column, .row.medium-unstack > .columns {
+      flex: 1 1 0px; } }
+
+@media print, screen and (min-width: 40em) {
+  /* line 236, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-collapse > .column, .medium-collapse > .columns {
+    padding-right: 0;
+    padding-left: 0; }
+  /* line 240, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .medium-uncollapse > .column, .medium-uncollapse > .columns {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+@media print, screen and (min-width: 64em) {
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-0 {
+    margin-left: 0%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-1 {
+    margin-left: 8.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-2 {
+    margin-left: 16.66667%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-3 {
+    margin-left: 25%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-4 {
+    margin-left: 33.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-5 {
+    margin-left: 41.66667%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-6 {
+    margin-left: 50%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-7 {
+    margin-left: 58.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-9 {
+    flex: 0 0 75%;
+    max-width: 75%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-8 {
+    margin-left: 66.66667%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-9 {
+    margin-left: 75%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-10 {
+    margin-left: 83.33333%; }
+  /* line 192, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-12 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  /* line 200, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-offset-11 {
+    margin-left: 91.66667%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-1 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-1 > .column, .large-up-1 > .columns {
+      flex: 0 0 100%;
+      max-width: 100%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-2 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-2 > .column, .large-up-2 > .columns {
+      flex: 0 0 50%;
+      max-width: 50%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-3 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-3 > .column, .large-up-3 > .columns {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-4 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-4 > .column, .large-up-4 > .columns {
+      flex: 0 0 25%;
+      max-width: 25%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-5 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-5 > .column, .large-up-5 > .columns {
+      flex: 0 0 20%;
+      max-width: 20%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-6 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-6 > .column, .large-up-6 > .columns {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-7 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-7 > .column, .large-up-7 > .columns {
+      flex: 0 0 14.28571%;
+      max-width: 14.28571%; }
+  /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-up-8 {
+    flex-wrap: wrap; }
+    /* line 103, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .large-up-8 > .column, .large-up-8 > .columns {
+      flex: 0 0 12.5%;
+      max-width: 12.5%; } }
+
+@media print, screen and (min-width: 64em) and (min-width: 64em) {
+  /* line 215, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-expand {
+    flex: 1 1 0px; } }
+
+/* line 223, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.row.large-unstack > .column, .row.large-unstack > .columns {
+  flex: 0 0 100%; }
+  @media print, screen and (min-width: 64em) {
+    /* line 223, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .row.large-unstack > .column, .row.large-unstack > .columns {
+      flex: 1 1 0px; } }
+
+@media print, screen and (min-width: 64em) {
+  /* line 236, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-collapse > .column, .large-collapse > .columns {
+    padding-right: 0;
+    padding-left: 0; }
+  /* line 240, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+  .large-uncollapse > .column, .large-uncollapse > .columns {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+/* line 245, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.shrink {
+  flex: 0 0 auto;
+  max-width: 100%; }
+
+/* line 251, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+.column-block {
+  margin-bottom: 1.25rem; }
+  /* line 78, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_gutter.scss */
+  .column-block > :last-child {
+    margin-bottom: 0; }
+  @media print, screen and (min-width: 40em) {
+    /* line 251, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_flex-grid.scss */
+    .column-block {
+      margin-bottom: 1.875rem; }
+      /* line 78, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/grid/_gutter.scss */
+      .column-block > :last-child {
+        margin-bottom: 0; } }
+
+/* line 256, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+/* line 280, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+p {
+  margin-bottom: 1rem;
+  font-size: inherit;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility; }
+
+/* line 289, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+em,
+i {
+  font-style: italic;
+  line-height: inherit; }
+
+/* line 296, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit; }
+
+/* line 303, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+small {
+  font-size: 80%;
+  line-height: inherit; }
+
+/* line 309, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility; }
+  /* line 321, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h1 small, .h1 small,
+  h2 small, .h2 small,
+  h3 small, .h3 small,
+  h4 small, .h4 small,
+  h5 small, .h5 small,
+  h6 small, .h6 small {
+    line-height: 0;
+    color: #cacaca; }
+
+/* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h1, .h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+/* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h2, .h2 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+/* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h3, .h3 {
+  font-size: 1.1875rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+/* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h4, .h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+/* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h5, .h5 {
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+/* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+@media print, screen and (min-width: 40em) {
+  /* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h1, .h1 {
+    font-size: 3rem; }
+  /* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h2, .h2 {
+    font-size: 2.5rem; }
+  /* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h3, .h3 {
+    font-size: 1.9375rem; }
+  /* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h4, .h4 {
+    font-size: 1.5625rem; }
+  /* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h5, .h5 {
+    font-size: 1.25rem; }
+  /* line 332, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  h6, .h6 {
+    font-size: 1rem; } }
+
+/* line 371, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+a {
+  line-height: inherit;
+  color: #1779ba;
+  text-decoration: none;
+  cursor: pointer; }
+  /* line 378, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  a:hover, a:focus {
+    color: #1468a0; }
+  /* line 386, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  a img {
+    border: 0; }
+
+/* line 392, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+hr {
+  clear: both;
+  max-width: 75rem;
+  height: 0;
+  margin: 1.25rem auto;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #cacaca;
+  border-left: 0; }
+
+/* line 406, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+ul,
+ol,
+dl {
+  margin-bottom: 1rem;
+  list-style-position: outside;
+  line-height: 1.6; }
+
+/* line 415, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+li {
+  font-size: inherit; }
+
+/* line 420, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+ul {
+  margin-left: 1.25rem;
+  list-style-type: disc; }
+
+/* line 426, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+ol {
+  margin-left: 1.25rem; }
+
+/* line 432, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+ul ul, ol ul, ul ol, ol ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0; }
+
+/* line 439, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+dl {
+  margin-bottom: 1rem; }
+  /* line 442, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  dl dt {
+    margin-bottom: 0.3rem;
+    font-weight: bold; }
+
+/* line 449, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  border-left: 1px solid #cacaca; }
+  /* line 454, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  blockquote, blockquote p {
+    line-height: 1.6;
+    color: #8a8a8a; }
+
+/* line 461, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+cite {
+  display: block;
+  font-size: 0.8125rem;
+  color: #8a8a8a; }
+  /* line 466, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+  cite:before {
+    content: "— "; }
+
+/* line 472, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+abbr, abbr[title] {
+  border-bottom: 1px dotted #0a0a0a;
+  cursor: help;
+  text-decoration: none; }
+
+/* line 479, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+figure {
+  margin: 0; }
+
+/* line 484, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+code {
+  padding: 0.125rem 0.3125rem 0.0625rem;
+  border: 1px solid #cacaca;
+  background-color: #e6e6e6;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #0a0a0a; }
+
+/* line 496, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_base.scss */
+kbd {
+  margin: 0;
+  padding: 0.125rem 0.25rem 0;
+  background-color: #e6e6e6;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  color: #0a0a0a; }
+
+/* line 48, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_helpers.scss */
+.subheader {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #8a8a8a; }
+
+/* line 58, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_helpers.scss */
+.lead {
+  font-size: 125%;
+  line-height: 1.6; }
+
+/* line 64, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_helpers.scss */
+.stat {
+  font-size: 2.5rem;
+  line-height: 1; }
+  /* line 68, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_helpers.scss */
+  p + .stat {
+    margin-top: -1rem; }
+
+/* line 75, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_helpers.scss */
+ul.no-bullet, ol.no-bullet {
+  margin-left: 0;
+  list-style: none; }
+
+/* line 15, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+.text-left {
+  text-align: left; }
+
+/* line 15, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+.text-right {
+  text-align: right; }
+
+/* line 15, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+.text-center {
+  text-align: center; }
+
+/* line 15, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+.text-justify {
+  text-align: justify; }
+
+@media print, screen and (min-width: 40em) {
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .medium-text-left {
+    text-align: left; }
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .medium-text-right {
+    text-align: right; }
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .medium-text-center {
+    text-align: center; }
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .medium-text-justify {
+    text-align: justify; } }
+
+@media print, screen and (min-width: 64em) {
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .large-text-left {
+    text-align: left; }
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .large-text-right {
+    text-align: right; }
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .large-text-center {
+    text-align: center; }
+  /* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_alignment.scss */
+  .large-text-justify {
+    text-align: justify; } }
+
+/* line 14, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+.show-for-print {
+  display: none !important; }
+
+@media print {
+  /* line 17, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: black !important;
+    text-shadow: none !important; }
+  /* line 28, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  .show-for-print {
+    display: block !important; }
+  /* line 29, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  .hide-for-print {
+    display: none !important; }
+  /* line 31, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  table.show-for-print {
+    display: table !important; }
+  /* line 32, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  thead.show-for-print {
+    display: table-header-group !important; }
+  /* line 33, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  tbody.show-for-print {
+    display: table-row-group !important; }
+  /* line 34, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  tr.show-for-print {
+    display: table-row !important; }
+  /* line 35, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  td.show-for-print {
+    display: table-cell !important; }
+  /* line 36, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  th.show-for-print {
+    display: table-cell !important; }
+  /* line 39, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 42, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  /* line 46, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  .ir a:after,
+  a[href^='javascript:']:after,
+  a[href^='#']:after {
+    content: ''; }
+  /* line 51, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /* line 54, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #8a8a8a;
+    page-break-inside: avoid; }
+  /* line 61, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  thead {
+    display: table-header-group; }
+  /* line 63, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+  /* line 66, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  /* line 70, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  /* line 78, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; }
+  /* line 82, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/typography/_print.scss */
+  .print-break-inside {
+    page-break-inside: auto; } }
+
+/* line 125, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'],
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4375rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  appearance: none; }
+  /* line 111, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+  [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #8a8a8a;
+    background-color: #fefefe;
+    box-shadow: 0 0 5px #cacaca;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
+
+/* line 131, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+textarea {
+  max-width: 100%; }
+  /* line 134, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+  textarea[rows] {
+    height: auto; }
+
+/* line 142, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+input::placeholder,
+textarea::placeholder {
+  color: #cacaca; }
+
+/* line 147, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+input:disabled, input[readonly],
+textarea:disabled,
+textarea[readonly] {
+  background-color: #e6e6e6;
+  cursor: not-allowed; }
+
+/* line 155, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+[type='submit'],
+[type='button'] {
+  appearance: none;
+  border-radius: 0; }
+
+/* line 162, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_text.scss */
+input[type='search'] {
+  box-sizing: border-box; }
+
+/* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_checkbox.scss */
+[type='file'],
+[type='checkbox'],
+[type='radio'] {
+  margin: 0 0 1rem; }
+
+/* line 17, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_checkbox.scss */
+[type='checkbox'] + label,
+[type='radio'] + label {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0; }
+  /* line 26, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_checkbox.scss */
+  [type='checkbox'] + label[for],
+  [type='radio'] + label[for] {
+    cursor: pointer; }
+
+/* line 32, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_checkbox.scss */
+label > [type='checkbox'],
+label > [type='radio'] {
+  margin-right: 0.5rem; }
+
+/* line 38, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_checkbox.scss */
+[type='file'] {
+  width: 100%; }
+
+/* line 43, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_label.scss */
+label {
+  display: block;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.8;
+  color: #0a0a0a; }
+  /* line 46, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_label.scss */
+  label.middle {
+    margin: 0 0 1rem;
+    padding: 0.5625rem 0; }
+
+/* line 22, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_help-text.scss */
+.help-text {
+  margin-top: -0.5rem;
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: #0a0a0a; }
+
+/* line 27, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+.input-group {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  align-items: stretch; }
+  /* line 36, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+  .input-group > :first-child {
+    border-radius: 0 0 0 0; }
+  /* line 41, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+  .input-group > :last-child > * {
+    border-radius: 0 0 0 0; }
+
+/* line 47, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+.input-group-label, .input-group-field, .input-group-button, .input-group-button a,
+.input-group-button input,
+.input-group-button button,
+.input-group-button label {
+  margin: 0;
+  white-space: nowrap; }
+
+/* line 57, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+.input-group-label {
+  padding: 0 1rem;
+  border: 1px solid #cacaca;
+  background: #e6e6e6;
+  color: #0a0a0a;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center; }
+  /* line 78, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+  .input-group-label:first-child {
+    border-right: 0; }
+  /* line 82, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+  .input-group-label:last-child {
+    border-left: 0; }
+
+/* line 88, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+.input-group-field {
+  border-radius: 0;
+  flex: 1 1 0px;
+  height: auto;
+  min-width: 0; }
+
+/* line 102, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+.input-group-button {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex: 0 0 auto; }
+  /* line 117, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_input-group.scss */
+  .input-group-button a,
+  .input-group-button input,
+  .input-group-button button,
+  .input-group-button label {
+    height: auto;
+    align-self: stretch;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1rem; }
+
+/* line 39, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_fieldset.scss */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* line 45, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_fieldset.scss */
+legend {
+  max-width: 100%;
+  margin-bottom: 0.5rem; }
+
+/* line 50, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_fieldset.scss */
+.fieldset {
+  margin: 1.125rem 0;
+  padding: 1.25rem;
+  border: 1px solid #cacaca; }
+  /* line 30, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_fieldset.scss */
+  .fieldset legend {
+    margin: 0;
+    margin-left: -0.1875rem;
+    padding: 0 0.1875rem; }
+
+/* line 83, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_select.scss */
+select {
+  height: 2.4375rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  appearance: none;
+  border: 1px solid #cacaca;
+  border-radius: 0;
+  background-color: #fefefe;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #0a0a0a;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right -1rem center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+  padding-right: 1.5rem;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
+  @media screen and (min-width: 0\0) {
+    /* line 83, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_select.scss */
+    select {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg=="); } }
+  /* line 54, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_select.scss */
+  select:focus {
+    outline: none;
+    border: 1px solid #8a8a8a;
+    background-color: #fefefe;
+    box-shadow: 0 0 5px #cacaca;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out; }
+  /* line 66, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_select.scss */
+  select:disabled {
+    background-color: #e6e6e6;
+    cursor: not-allowed; }
+  /* line 72, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_select.scss */
+  select::-ms-expand {
+    display: none; }
+  /* line 76, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_select.scss */
+  select[multiple] {
+    height: auto;
+    background-image: none; }
+
+/* line 45, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_error.scss */
+.is-invalid-input:not(:focus) {
+  border-color: #cc4b37;
+  background-color: #f9ecea; }
+  /* line 48, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_error.scss */
+  .is-invalid-input:not(:focus)::placeholder {
+    color: #cc4b37; }
+
+/* line 75, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_error.scss */
+.is-invalid-label {
+  color: #cc4b37; }
+
+/* line 81, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_error.scss */
+.form-error {
+  display: none;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #cc4b37; }
+  /* line 84, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/forms/_error.scss */
+  .form-error.is-visible {
+    display: block; }
+
+/* line 262, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  font-family: inherit;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1779ba;
+  color: #fefefe; }
+  /* line 201, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/util/_mixins.scss */
+  [data-whatinput='mouse'] .button {
+    outline: 0; }
+  /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button:hover, .button:focus {
+    background-color: #14679e;
+    color: #fefefe; }
+  /* line 267, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.tiny {
+    font-size: 0.6rem; }
+  /* line 267, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.small {
+    font-size: 0.75rem; }
+  /* line 267, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.large {
+    font-size: 1.25rem; }
+  /* line 272, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.expanded {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
+  /* line 277, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.primary {
+    background-color: #1779ba;
+    color: #fefefe; }
+    /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.primary:hover, .button.primary:focus {
+      background-color: #126195;
+      color: #fefefe; }
+  /* line 277, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.secondary {
+    background-color: #767676;
+    color: #fefefe; }
+    /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.secondary:hover, .button.secondary:focus {
+      background-color: #5e5e5e;
+      color: #fefefe; }
+  /* line 277, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.success {
+    background-color: #3adb76;
+    color: #0a0a0a; }
+    /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.success:hover, .button.success:focus {
+      background-color: #22bb5b;
+      color: #0a0a0a; }
+  /* line 277, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.warning {
+    background-color: #ffae00;
+    color: #0a0a0a; }
+    /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.warning:hover, .button.warning:focus {
+      background-color: #cc8b00;
+      color: #0a0a0a; }
+  /* line 277, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.alert {
+    background-color: #cc4b37;
+    color: #fefefe; }
+    /* line 150, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.alert:hover, .button.alert:focus {
+      background-color: #a53b2a;
+      color: #fefefe; }
+  /* line 293, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.disabled, .button[disabled] {
+    opacity: 0.25;
+    cursor: not-allowed; }
+    /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.disabled, .button.disabled:hover, .button.disabled:focus, .button[disabled], .button[disabled]:hover, .button[disabled]:focus {
+      background-color: #1779ba;
+      color: #fefefe; }
+    /* line 298, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.disabled.primary, .button[disabled].primary {
+      opacity: 0.25;
+      cursor: not-allowed; }
+      /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.disabled.primary, .button.disabled.primary:hover, .button.disabled.primary:focus, .button[disabled].primary, .button[disabled].primary:hover, .button[disabled].primary:focus {
+        background-color: #1779ba;
+        color: #fefefe; }
+    /* line 298, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.disabled.secondary, .button[disabled].secondary {
+      opacity: 0.25;
+      cursor: not-allowed; }
+      /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.disabled.secondary, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+        background-color: #767676;
+        color: #fefefe; }
+    /* line 298, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.disabled.success, .button[disabled].success {
+      opacity: 0.25;
+      cursor: not-allowed; }
+      /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.disabled.success, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success, .button[disabled].success:hover, .button[disabled].success:focus {
+        background-color: #3adb76;
+        color: #0a0a0a; }
+    /* line 298, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.disabled.warning, .button[disabled].warning {
+      opacity: 0.25;
+      cursor: not-allowed; }
+      /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.disabled.warning, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning, .button[disabled].warning:hover, .button[disabled].warning:focus {
+        background-color: #ffae00;
+        color: #0a0a0a; }
+    /* line 298, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.disabled.alert, .button[disabled].alert {
+      opacity: 0.25;
+      cursor: not-allowed; }
+      /* line 207, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.disabled.alert, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert, .button[disabled].alert:hover, .button[disabled].alert:focus {
+        background-color: #cc4b37;
+        color: #fefefe; }
+  /* line 306, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.hollow {
+    border: 1px solid #1779ba;
+    color: #1779ba; }
+    /* line 158, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow, .button.hollow:hover, .button.hollow:focus {
+      background-color: transparent; }
+    /* line 165, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus {
+      background-color: transparent; }
+    /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow:hover, .button.hollow:focus {
+      border-color: #0c3d5d;
+      color: #0c3d5d; }
+      /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.hollow:hover.disabled, .button.hollow:hover[disabled], .button.hollow:focus.disabled, .button.hollow:focus[disabled] {
+        border: 1px solid #1779ba;
+        color: #1779ba; }
+    /* line 311, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow.primary {
+      border: 1px solid #1779ba;
+      color: #1779ba; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.hollow.primary:hover, .button.hollow.primary:focus {
+        border-color: #0c3d5d;
+        color: #0c3d5d; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.hollow.primary:hover.disabled, .button.hollow.primary:hover[disabled], .button.hollow.primary:focus.disabled, .button.hollow.primary:focus[disabled] {
+          border: 1px solid #1779ba;
+          color: #1779ba; }
+    /* line 311, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow.secondary {
+      border: 1px solid #767676;
+      color: #767676; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.hollow.secondary:hover, .button.hollow.secondary:focus {
+        border-color: #3b3b3b;
+        color: #3b3b3b; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.hollow.secondary:hover.disabled, .button.hollow.secondary:hover[disabled], .button.hollow.secondary:focus.disabled, .button.hollow.secondary:focus[disabled] {
+          border: 1px solid #767676;
+          color: #767676; }
+    /* line 311, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow.success {
+      border: 1px solid #3adb76;
+      color: #3adb76; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.hollow.success:hover, .button.hollow.success:focus {
+        border-color: #157539;
+        color: #157539; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.hollow.success:hover.disabled, .button.hollow.success:hover[disabled], .button.hollow.success:focus.disabled, .button.hollow.success:focus[disabled] {
+          border: 1px solid #3adb76;
+          color: #3adb76; }
+    /* line 311, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow.warning {
+      border: 1px solid #ffae00;
+      color: #ffae00; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.hollow.warning:hover, .button.hollow.warning:focus {
+        border-color: #805700;
+        color: #805700; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.hollow.warning:hover.disabled, .button.hollow.warning:hover[disabled], .button.hollow.warning:focus.disabled, .button.hollow.warning:focus[disabled] {
+          border: 1px solid #ffae00;
+          color: #ffae00; }
+    /* line 311, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.hollow.alert {
+      border: 1px solid #cc4b37;
+      color: #cc4b37; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.hollow.alert:hover, .button.hollow.alert:focus {
+        border-color: #67251a;
+        color: #67251a; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.hollow.alert:hover.disabled, .button.hollow.alert:hover[disabled], .button.hollow.alert:focus.disabled, .button.hollow.alert:focus[disabled] {
+          border: 1px solid #cc4b37;
+          color: #cc4b37; }
+  /* line 320, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.clear {
+    border: 1px solid #1779ba;
+    color: #1779ba; }
+    /* line 158, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear, .button.clear:hover, .button.clear:focus {
+      background-color: transparent; }
+    /* line 165, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear.disabled, .button.clear.disabled:hover, .button.clear.disabled:focus, .button.clear[disabled], .button.clear[disabled]:hover, .button.clear[disabled]:focus {
+      background-color: transparent; }
+    /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear:hover, .button.clear:focus {
+      border-color: #0c3d5d;
+      color: #0c3d5d; }
+      /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear:hover.disabled, .button.clear:hover[disabled], .button.clear:focus.disabled, .button.clear:focus[disabled] {
+        border: 1px solid #1779ba;
+        color: #1779ba; }
+    /* line 325, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear, .button.clear.disabled, .button.clear[disabled], .button.clear:hover, .button.clear:hover.disabled, .button.clear:hover[disabled], .button.clear:focus, .button.clear:focus.disabled, .button.clear:focus[disabled] {
+      border-color: transparent; }
+    /* line 331, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear.primary {
+      border: 1px solid #1779ba;
+      color: #1779ba; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.primary:hover, .button.clear.primary:focus {
+        border-color: #0c3d5d;
+        color: #0c3d5d; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.clear.primary:hover.disabled, .button.clear.primary:hover[disabled], .button.clear.primary:focus.disabled, .button.clear.primary:focus[disabled] {
+          border: 1px solid #1779ba;
+          color: #1779ba; }
+      /* line 336, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.primary, .button.clear.primary.disabled, .button.clear.primary[disabled], .button.clear.primary:hover, .button.clear.primary:hover.disabled, .button.clear.primary:hover[disabled], .button.clear.primary:focus, .button.clear.primary:focus.disabled, .button.clear.primary:focus[disabled] {
+        border-color: transparent; }
+    /* line 331, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear.secondary {
+      border: 1px solid #767676;
+      color: #767676; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.secondary:hover, .button.clear.secondary:focus {
+        border-color: #3b3b3b;
+        color: #3b3b3b; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.clear.secondary:hover.disabled, .button.clear.secondary:hover[disabled], .button.clear.secondary:focus.disabled, .button.clear.secondary:focus[disabled] {
+          border: 1px solid #767676;
+          color: #767676; }
+      /* line 336, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.secondary, .button.clear.secondary.disabled, .button.clear.secondary[disabled], .button.clear.secondary:hover, .button.clear.secondary:hover.disabled, .button.clear.secondary:hover[disabled], .button.clear.secondary:focus, .button.clear.secondary:focus.disabled, .button.clear.secondary:focus[disabled] {
+        border-color: transparent; }
+    /* line 331, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear.success {
+      border: 1px solid #3adb76;
+      color: #3adb76; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.success:hover, .button.clear.success:focus {
+        border-color: #157539;
+        color: #157539; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.clear.success:hover.disabled, .button.clear.success:hover[disabled], .button.clear.success:focus.disabled, .button.clear.success:focus[disabled] {
+          border: 1px solid #3adb76;
+          color: #3adb76; }
+      /* line 336, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.success, .button.clear.success.disabled, .button.clear.success[disabled], .button.clear.success:hover, .button.clear.success:hover.disabled, .button.clear.success:hover[disabled], .button.clear.success:focus, .button.clear.success:focus.disabled, .button.clear.success:focus[disabled] {
+        border-color: transparent; }
+    /* line 331, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear.warning {
+      border: 1px solid #ffae00;
+      color: #ffae00; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.warning:hover, .button.clear.warning:focus {
+        border-color: #805700;
+        color: #805700; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.clear.warning:hover.disabled, .button.clear.warning:hover[disabled], .button.clear.warning:focus.disabled, .button.clear.warning:focus[disabled] {
+          border: 1px solid #ffae00;
+          color: #ffae00; }
+      /* line 336, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.warning, .button.clear.warning.disabled, .button.clear.warning[disabled], .button.clear.warning:hover, .button.clear.warning:hover.disabled, .button.clear.warning:hover[disabled], .button.clear.warning:focus, .button.clear.warning:focus.disabled, .button.clear.warning:focus[disabled] {
+        border-color: transparent; }
+    /* line 331, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+    .button.clear.alert {
+      border: 1px solid #cc4b37;
+      color: #cc4b37; }
+      /* line 182, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.alert:hover, .button.clear.alert:focus {
+        border-color: #67251a;
+        color: #67251a; }
+        /* line 185, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+        .button.clear.alert:hover.disabled, .button.clear.alert:hover[disabled], .button.clear.alert:focus.disabled, .button.clear.alert:focus[disabled] {
+          border: 1px solid #cc4b37;
+          color: #cc4b37; }
+      /* line 336, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+      .button.clear.alert, .button.clear.alert.disabled, .button.clear.alert[disabled], .button.clear.alert:hover, .button.clear.alert:hover.disabled, .button.clear.alert:hover[disabled], .button.clear.alert:focus, .button.clear.alert:focus.disabled, .button.clear.alert:focus[disabled] {
+        border-color: transparent; }
+  /* line 222, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.4em;
+    content: '';
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: #fefefe transparent transparent;
+    position: relative;
+    top: 0.4em;
+    display: inline-block;
+    float: right;
+    margin-left: 1em; }
+  /* line 358, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown.hollow::after {
+    border-top-color: #1779ba; }
+  /* line 364, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown.hollow.primary::after {
+    border-top-color: #1779ba; }
+  /* line 364, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown.hollow.secondary::after {
+    border-top-color: #767676; }
+  /* line 364, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown.hollow.success::after {
+    border-top-color: #3adb76; }
+  /* line 364, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown.hollow.warning::after {
+    border-top-color: #ffae00; }
+  /* line 364, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.dropdown.hollow.alert::after {
+    border-top-color: #cc4b37; }
+  /* line 373, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+  .button.arrow-only::after {
+    top: -0.1em;
+    float: none;
+    margin-left: 0; }
+
+/* line 380, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_button.scss */
+a.button:hover, a.button:focus {
+  text-decoration: none; }
+
+/* line 62, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+.hide {
+  display: none !important; }
+
+/* line 66, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+.invisible {
+  visibility: hidden; }
+
+@media screen and (max-width: 39.9375em) {
+  /* line 82, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-small-only {
+    display: none !important; } }
+
+@media screen and (max-width: 0em), screen and (min-width: 40em) {
+  /* line 86, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .show-for-small-only {
+    display: none !important; } }
+
+@media print, screen and (min-width: 40em) {
+  /* line 73, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-medium {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em) {
+  /* line 77, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .show-for-medium {
+    display: none !important; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  /* line 82, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-medium-only {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
+  /* line 86, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .show-for-medium-only {
+    display: none !important; } }
+
+@media print, screen and (min-width: 64em) {
+  /* line 73, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-large {
+    display: none !important; } }
+
+@media screen and (max-width: 63.9375em) {
+  /* line 77, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .show-for-large {
+    display: none !important; } }
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  /* line 82, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-large-only {
+    display: none !important; } }
+
+@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
+  /* line 86, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+  .show-for-large-only {
+    display: none !important; } }
+
+/* line 93, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+.show-for-sr,
+.show-on-focus {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0; }
+
+/* line 100, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+.show-on-focus:active, .show-on-focus:focus {
+  position: static !important;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  clip-path: none; }
+
+/* line 107, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+.show-for-landscape,
+.hide-for-portrait {
+  display: block !important; }
+  @media screen and (orientation: landscape) {
+    /* line 107, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+    .show-for-landscape,
+    .hide-for-portrait {
+      display: block !important; } }
+  @media screen and (orientation: portrait) {
+    /* line 107, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+    .show-for-landscape,
+    .hide-for-portrait {
+      display: none !important; } }
+
+/* line 120, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important; }
+  @media screen and (orientation: landscape) {
+    /* line 120, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+    .hide-for-landscape,
+    .show-for-portrait {
+      display: none !important; } }
+  @media screen and (orientation: portrait) {
+    /* line 120, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_visibility.scss */
+    .hide-for-landscape,
+    .show-for-portrait {
+      display: block !important; } }
+
+/* line 10, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_float.scss */
+.float-left {
+  float: left !important; }
+
+/* line 14, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_float.scss */
+.float-right {
+  float: right !important; }
+
+/* line 18, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/components/_float.scss */
+.float-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+/* line 170, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/util/_mixins.scss */
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: ' ';
+  flex-basis: 0;
+  order: 1; }
+
+/* line 181, /var/www/solutions-hiring-assignment-master/project-files/node_modules/foundation-sites/scss/util/_mixins.scss */
+.clearfix::after {
+  clear: both; }
+
+/* line 14, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  background-image: url("../../resources/graphics/background.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%; }
+
+/* line 23, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+#main {
+  min-height: 30em;
+  background-color: white;
+  margin-bottom: 4em;
+  border: solid 1px #ccc;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0; }
+  @media screen and (min-width: 40em) {
+    /* line 23, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    #main {
+      margin-top: 4em; } }
+
+/* line 35, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+#geo-tooltip {
+  max-height: 50px;
+  height: auto;
+  transition: max-height 500ms 1s; }
+  /* line 40, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #geo-tooltip.hide {
+    max-height: 0; }
+
+/* line 45, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+#search {
+  background-color: #1C688E;
+  min-height: 6em;
+  padding-top: 1.5em;
+  padding-bottom: .5em; }
+  /* line 51, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #search input {
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px 0; }
+
+/* line 57, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+#sidebar {
+  border-right: 1px solid #E6E6E6;
+  padding-top: 3em; }
+  /* line 62, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #sidebar ul {
+    list-style: none; }
+  /* line 67, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #sidebar #cuisine-filter li, #sidebar #rating-filter li, #sidebar #payment-filter li, #sidebar #price-filter li {
+    line-height: 2em;
+    transition: background-color 255ms, color 255ms;
+    cursor: pointer; }
+    /* line 72, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    #sidebar #cuisine-filter li:hover, #sidebar #cuisine-filter li.active, #sidebar #rating-filter li:hover, #sidebar #rating-filter li.active, #sidebar #payment-filter li:hover, #sidebar #payment-filter li.active, #sidebar #price-filter li:hover, #sidebar #price-filter li.active {
+      background-color: #2897C5;
+      color: white;
+      border-radius: 3px; }
+      /* line 77, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+      #sidebar #cuisine-filter li:hover span, #sidebar #cuisine-filter li.active span, #sidebar #rating-filter li:hover span, #sidebar #rating-filter li.active span, #sidebar #payment-filter li:hover span, #sidebar #payment-filter li.active span, #sidebar #price-filter li:hover span, #sidebar #price-filter li.active span {
+        color: white; }
+  /* line 83, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #sidebar #cuisine-filter ul, #sidebar #rating-filter ul, #sidebar #payment-filter ul, #sidebar #price-filter ul {
+    margin-left: 0; }
+  /* line 87, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #sidebar #cuisine-filter .row span, #sidebar #rating-filter .row span, #sidebar #payment-filter .row span, #sidebar #price-filter .row span {
+    color: #9A9A9A; }
+  /* line 90, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #sidebar #cuisine-filter .row p, #sidebar #rating-filter .row p, #sidebar #payment-filter .row p, #sidebar #price-filter .row p {
+    margin-bottom: 0; }
+  /* line 94, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #sidebar #cuisine-filter#rating-filter li, #sidebar #rating-filter#rating-filter li, #sidebar #payment-filter#rating-filter li, #sidebar #price-filter#rating-filter li {
+    height: 2em; }
+    /* line 97, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    #sidebar #cuisine-filter#rating-filter li .rating, #sidebar #rating-filter#rating-filter li .rating, #sidebar #payment-filter#rating-filter li .rating, #sidebar #price-filter#rating-filter li .rating {
+      margin: 0 auto;
+      margin-left: .9375rem; }
+
+/* line 105, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+#results-wrapper {
+  padding-top: 3em; }
+  /* line 108, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #results-wrapper #results-top {
+    font-size: 1.1em;
+    height: 2em;
+    border-bottom: solid 1px #E6E6E6;
+    padding-left: 0;
+    margin-bottom: 1rem; }
+    /* line 115, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    #results-wrapper #results-top p {
+      margin-bottom: 0;
+      background-color: white;
+      display: inline-block;
+      line-height: 2em;
+      position: absolute;
+      padding-right: 1em; }
+  /* line 125, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #results-wrapper #results {
+    max-height: 360px;
+    overflow: hidden;
+    transition: max-height 1s; }
+    /* line 130, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    #results-wrapper #results.expanded {
+      max-height: 1300px; }
+
+/* line 136, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+#results-expander {
+  margin-top: -5em;
+  padding-top: 6em;
+  background: linear-gradient(180deg, transparent 3em, white 5em);
+  z-index: 50;
+  position: relative; }
+  /* line 143, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #results-expander .expando-button {
+    background-color: white;
+    color: #9A9A9A;
+    border: solid 1px #9A9A9A;
+    border-radius: 4px; }
+  /* line 150, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #results-expander #pagination {
+    padding-bottom: 1em; }
+  /* line 154, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  #results-expander .paginator {
+    width: 3em;
+    height: 3em;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #9A9A9A;
+    font-weight: bold;
+    color: #9A9A9A;
+    margin: .25em;
+    transition: all 255ms;
+    cursor: pointer; }
+    /* line 166, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    #results-expander .paginator.active, #results-expander .paginator:hover {
+      background-color: #2897C5;
+      color: white; }
+
+/* line 173, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+.restaurant-card {
+  margin: 1em 0; }
+  /* line 176, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .restaurant-card .restaurant-picture {
+    float: left; }
+    /* line 179, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-picture img {
+      border: 1px solid #979797;
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
+      width: 80px;
+      min-height: 80px;
+      background-color: #979797;
+      height: auto; }
+  /* line 190, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .restaurant-card .restaurant-content {
+    float: left; }
+    /* line 193, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-content h1 {
+      font-size: 1.25em;
+      font-family: 'Helvetica';
+      color: black; }
+    /* line 199, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-content .restaurant-note {
+      font-size: 1.25em;
+      color: #FFAB66;
+      font-family: 'Helvetica'; }
+    /* line 205, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-content .rating {
+      display: inline-block; }
+    /* line 209, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-content .restaurant-meta div {
+      display: inline-block; }
+    /* line 213, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-content .restaurant-reviews, .restaurant-card .restaurant-content .restaurant-description {
+      font-size: 1.1em;
+      color: #9A9A9A;
+      font-family: 'Helvetica Neue', 'Helvetica'; }
+    /* line 219, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+    .restaurant-card .restaurant-content em {
+      font-style: normal;
+      background-color: khaki;
+      font-weight: bold;
+      color: black; }
+
+/* line 228, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+.rating {
+  background: url("../../resources/graphics/star-empty.png") repeat-x;
+  background-size: contain;
+  font-size: 0;
+  height: 15px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 75px; }
+  /* line 239, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-0:before {
+    width: 0px; }
+  /* line 244, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-05:before {
+    width: 8px; }
+  /* line 239, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-1:before {
+    width: 15px; }
+  /* line 244, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-15:before {
+    width: 23px; }
+  /* line 239, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-2:before {
+    width: 30px; }
+  /* line 244, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-25:before {
+    width: 38px; }
+  /* line 239, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-3:before {
+    width: 45px; }
+  /* line 244, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-35:before {
+    width: 53px; }
+  /* line 239, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-4:before {
+    width: 60px; }
+  /* line 244, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-45:before {
+    width: 68px; }
+  /* line 239, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating.note-5:before {
+    width: 75px; }
+  /* line 250, /var/www/solutions-hiring-assignment-master/project-files/assets/scss/main.scss */
+  .rating:before {
+    content: '';
+    background-image: url("../../resources/graphics/stars-plain.png");
+    display: block;
+    z-index: 10;
+    width: 0;
+    height: 15px;
+    background-size: contain; }
+
+/*# sourceMappingURL=../../scss */
