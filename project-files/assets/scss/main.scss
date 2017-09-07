@@ -1,0 +1,260 @@
+@import 'settings';
+@import 'foundation';
+@include foundation-global-styles;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  background-image: url('../../resources/graphics/background.png');
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+	min-height: 30em;
+	background-color: white;
+	margin-bottom: 4em;
+	border: solid 1px #ccc;
+	box-shadow: rgba(0,0,0, .2) 0 2px 6px 0;
+
+	@media screen and (min-width: 40em){
+		margin-top: 4em;
+	}
+}
+
+#geo-tooltip{
+	max-height: 50px;
+	height: auto;
+	transition: max-height 500ms 1s;
+
+	&.hide{
+		max-height: 0;
+	}
+}
+
+#search{
+	background-color: #1C688E;
+	min-height: 6em;
+	padding-top: 1.5em;
+	padding-bottom: .5em;
+
+	input{
+		border-radius: 3px;
+		box-shadow: rgba(0,0,0,.5) 0 2px 4px 0;
+	}
+}
+
+#sidebar{
+	border-right: 1px solid #E6E6E6;
+	padding-top: 3em;
+
+
+	ul{
+		list-style: none;
+	}
+
+	#cuisine-filter, #rating-filter, #payment-filter, #price-filter{
+		li{
+			line-height: 2em;
+			transition: background-color 255ms, color 255ms;
+			cursor: pointer;
+
+			&:hover, &.active{
+				background-color: #2897C5;
+				color: white;
+				border-radius: 3px;
+
+				span{
+					color: white;
+				}
+			}
+		}
+
+		ul{
+			margin-left: 0;
+		}
+
+		.row span{
+			color: #9A9A9A;
+		}
+		.row p{
+			margin-bottom: 0;
+		}
+
+		&#rating-filter li{
+			height: 2em;
+
+			.rating{
+				margin: 0 auto;
+				margin-left: .9375rem;
+			}
+		}
+	}
+}
+
+#results-wrapper{
+	padding-top: 3em;
+
+	#results-top{
+		font-size: 1.1em;
+	    height: 2em;
+	    border-bottom: solid 1px #E6E6E6;
+	    padding-left: 0;
+	    margin-bottom: 1rem;
+
+		p{
+			margin-bottom: 0;
+		    background-color: white;
+		    display: inline-block;
+		    line-height: 2em;
+		    position: absolute;
+		    padding-right: 1em;
+		}
+	}
+
+	#results{
+		max-height: 360px;
+		overflow: hidden;
+		transition: max-height 1s;
+
+		&.expanded{
+			max-height: 1300px;
+		}
+	}
+}
+
+#results-expander{
+	margin-top: -5em;
+    padding-top: 6em;
+    background: linear-gradient(180deg, transparent 3em, white 5em);
+    z-index: 50;
+    position: relative;
+
+	.expando-button{
+		background-color: white;
+		color: #9A9A9A;
+		border: solid 1px #9A9A9A;
+		border-radius: 4px;
+	}
+
+	#pagination{
+		padding-bottom: 1em;
+	}
+
+	.paginator {
+		width: 3em;
+	    height: 3em;
+	    border-radius: 4px;
+	    background: white;
+	    border: 1px solid #9A9A9A;
+	    font-weight: bold;
+	    color: #9A9A9A;
+	    margin: .25em;
+	    transition: all 255ms;
+	    cursor: pointer;
+
+	    &.active, &:hover{
+	    	background-color: #2897C5;
+			color: white; 
+	    }
+	}
+}
+
+.restaurant-card{
+	margin: 1em 0;
+
+	.restaurant-picture {
+		float: left;
+
+		img{
+			border: 1px solid #979797;
+			border-radius: 4px;
+			box-shadow: rgba(0,0,0,.5) 0 2px 4px;
+			width: 80px;
+			min-height: 80px;
+			background-color: #979797;
+			height: auto;
+		}
+	}
+
+	.restaurant-content{
+		float: left;
+
+		h1{
+			font-size: 1.25em;
+			font-family: 'Helvetica';
+			color: black;
+		}
+
+		.restaurant-note{
+			font-size: 1.25em;
+			color: #FFAB66;
+			font-family: 'Helvetica';
+		}
+
+		.rating{
+			display: inline-block;
+		}
+
+		.restaurant-meta div{
+			display: inline-block;
+		}
+
+		.restaurant-reviews, .restaurant-description{
+			font-size: 1.1em;
+			color: #9A9A9A;
+			font-family: 'Helvetica Neue', 'Helvetica';
+		}
+
+		em{
+			font-style: normal;
+			background-color: khaki;
+			font-weight: bold;
+			color: black;
+		}
+	}
+}
+
+.rating {
+  background: url("../../resources/graphics/star-empty.png") repeat-x;
+  background-size: contain;
+  font-size: 0;
+  height: 15px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 75px;
+
+  @for $i from 0 through 5{
+  	&.note-#{$i}:before{
+  		width: 15px * $i;
+  	}
+
+  	@if $i != 5{
+  		&.note-#{$i}5:before{
+	  		width: (15px * $i) + 8px;
+	  	}
+  	}
+  }
+  
+  &:before {
+    content: '';
+    background-image: url("../../resources/graphics/stars-plain.png");
+    display: block;
+    z-index: 10;
+    width: 0;
+    height: 15px;
+    background-size: contain;
+  }
+  
+}
